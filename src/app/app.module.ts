@@ -3,10 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AddpatientComponent } from './addpatient/addpatient.component';
+import { AddPpatientComponent } from './add-ppatient/add-ppatient.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AddpatientComponent,
+    AddPpatientComponent
   ],
   imports: [
     BrowserModule,
