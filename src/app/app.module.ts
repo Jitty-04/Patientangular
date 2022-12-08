@@ -9,6 +9,7 @@ import { NavComponent } from './nav/nav.component';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
+import { SearchComponent } from './search/search.component';
 const myrouter:Routes=[
   {
     path:"",
@@ -18,6 +19,10 @@ const myrouter:Routes=[
     path:"view",
     component:ViewPatientComponent
 
+  },
+  {
+    path:"search",
+    component:SearchComponent
   }
 
 ]
@@ -27,7 +32,8 @@ const myrouter:Routes=[
     AppComponent,
     AddpatientComponent,
     ViewPatientComponent,
-    NavComponent
+    NavComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,

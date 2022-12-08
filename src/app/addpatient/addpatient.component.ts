@@ -23,6 +23,7 @@ export class AddpatientComponent {
       console.log(response)
       if (response.status=="success") {
         alert("patient added successfully")
+
         this.name=""
         this.gender=""
         this.address=""
