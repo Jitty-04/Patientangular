@@ -41,7 +41,7 @@ export class SearchComponent {
         console.log(generated)
         if(generated.status=="success"){
         alert("Patient deleted successfully")
-        this.route.navigate(["search"])
+        window.location.reload()
         }
         else{
           alert("patient doesn't exist")
